@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <title>T#1 Dan Chemla</title>
+</head>
+
+<body>
+    
+    <br>
+    <h1>Enter Radius value and get the Volume of a Sphire</h1>
+    <br>
+    <div id="intro">
+        <label> Enter Radius: </label>
+        <br>
+        <div id="input" class="input-group mb-3, col-3">
+            <input id="radiusBox" type="number" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button onclick="return drawAndShowVolume()" class="btn btn-primary" type="button">Submit</button>
+            </div>
+        </div>
+        <br>
+        <span id="volumeText"></span>
+    </div>
+    <br>
+    <div id="myCanvas">
+        <canvas id="canvas" width="400" height="400"></canvas>
+        <br>
+        <br>
+        <button onclick="clearCanvas()" type="button" class="btn btn-danger">Clear</button>
+        <button onclick="drawWithTimer()" type="button" class="btn btn-success">Draw Cirrcles Automaticly</button>
+    </div>
+
+</body>
+
+</html>
